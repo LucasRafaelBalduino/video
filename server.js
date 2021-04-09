@@ -13,7 +13,7 @@ app.use("/peerjs", peerServer);
 app.use(express.static("public"));
 
 app.get("/tintas-verginia", (req, res) => {
-  res.redirect("matriz");
+  res.redirect(`/${uuidv4()}`);
 });
 
 app.get("/:room", (req, res) => {
