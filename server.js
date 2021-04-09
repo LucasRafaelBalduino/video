@@ -12,7 +12,7 @@ const peerServer = ExpressPeerServer(server, {
 app.use("/peerjs", peerServer);
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/tintas-verginia", (req, res) => {
   res.redirect("matriz");
 });
 
